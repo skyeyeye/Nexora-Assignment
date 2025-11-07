@@ -1,0 +1,15 @@
+body { font-family: Arial, sans-serif; margin: 0; padding: 20px; }
+.container { max-width: 1100px; margin: 0 auto; }
+.main { display: flex; gap: 20px; flex-wrap: wrap; }
+.left { flex: 2; min-width: 300px; }
+.right { flex: 1; min-width: 260px; border-left: 1px solid #eee; padding-left: 16px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill,minmax(180px,1fr)); gap: 12px; }
+.card { border: 1px solid #ddd; border-radius: 6px; padding: 12px; background: #fff; }
+button { padding: 8px 10px; cursor: pointer; }
+.modal { position: fixed; inset: 0; background: rgba(0,0,0,0.4); display:flex; justify-content:center; align-items:center; }
+.modal-inner { background: #fff; padding: 20px; border-radius: 8px; width: 320px; }
+.receipt { position: fixed; bottom: 16px; right: 16px; background: #fff; border: 1px solid #ccc; padding: 12px; border-radius:8px; }
+@media(max-width:700px) {
+  .main { flex-direction: column; }
+  .right { border-left: none; padding-left: 0; }
+}
